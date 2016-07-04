@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/actiion_karta_05"
+        android:icon="@mipmap/ic_sets"
+        android:title="Karta 05" />
+    <item
+        android:id="@+id/action_panhut_05"
+        android:icon="@mipmap/ic_sets"
+        android:title="Panhut 05" />
+    <item
+        android:id="@+id/action_rw_05"
+        android:icon="@mipmap/ic_sets"
+        android:title="RW 05" />
+</menu>

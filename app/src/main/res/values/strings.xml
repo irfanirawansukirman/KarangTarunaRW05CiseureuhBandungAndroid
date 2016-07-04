@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Karta 05 Ciseureuh</string>
+
+    <!-- Font Set -->
+    <string name="roboto_consended_font">fonts/RobotoCondensed-Regular.ttf</string>
+    <string name="roboto_regular_font">fonts/Roboto-Regular.ttf</string>
+    <string name="source_sans_font">fonts/source-sans-pro.regular.ttf</string>
+    <string name="raleway">fonts/Raleway-Regular.ttf</string>
+    <string name="karta05_title">Karta 05</string>
+    <string name="panhut05_title">Panhut 05</string>
+    <string name="rw05_title">RW 05</string>
 </resources>
