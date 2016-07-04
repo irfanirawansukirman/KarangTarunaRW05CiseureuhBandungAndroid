@@ -2,6 +2,7 @@ package com.karta05csr.bandung.home.viewmodel;
 
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.RelativeLayout;
 
 import com.karta05csr.bandung.R;
 import com.karta05csr.bandung.databinding.HomeActivityBinding;
@@ -26,6 +27,7 @@ public class HomeVM extends GitsVM<HomeController, HomeActivityBinding> {
     public void initBotNavigation() {
         nBottomBar = BottomBar.attach(mActivity, null);
         nBottomBar.setItems(R.menu.menu_home);
+        nBottomBar.setGravity(RelativeLayout.BELOW);
         nBottomBar.setOnMenuTabClickListener(new OnMenuTabClickListener() {
             @Override
             public void onMenuTabSelected(@IdRes int menuItemId) {

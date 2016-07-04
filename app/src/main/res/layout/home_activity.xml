@@ -11,30 +11,85 @@
             type="com.karta05csr.bandung.home.viewmodel.HomeVM" />
     </data>
 
-    <LinearLayout
+    <android.support.v4.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".home.view.activity.HomeActivity"
-        tools:ignore="MissingPrefix">
+        android:fitsSystemWindows="true">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            style="@style/MyToolbar">
-
-            <TextView
-                android:id="@+id/toolbar_title"
-                fontPath="@string/source_sans_font"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Karang Taruna RW 05"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-        </android.support.v7.widget.Toolbar>
-
-        <FrameLayout
-            android:id="@+id/fragment_container"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </LinearLayout>
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".home.view.activity.HomeActivity"
+            tools:ignore="MissingPrefix">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/MyToolbar">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    fontPath="@string/source_sans_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karang Taruna RW 05"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </android.support.v7.widget.Toolbar>
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="64dp"
+            android:layout_gravity="start">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp"
+                    android:background="@color/colorPrimary">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginTop="24dp"
+                        android:layout_width="64dp"
+                        android:id="@+id/img_home_profile"
+                        android:layout_height="64dp"
+                        android:src="@drawable/img_user"/>
+
+                    <TextView
+                        fontPath="@string/source_sans_font"
+                        android:layout_below="@+id/img_home_profile"
+                        android:id="@+id/txt_home_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp"
+                        android:text="Irfan Irawan S"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        fontPath="@string/source_sans_font"
+                        android:layout_below="@+id/img_home_profile"
+                        android:id="@+id/txt_home_jabatan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Sekretaris"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
 </layout>
